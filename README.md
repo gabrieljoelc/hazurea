@@ -1,6 +1,10 @@
 # Hazurea
 
-This shows how to use Hasura in Azure
+This project shows how [Hasura](https://hasura.io/) is a 
+
+This follows the [Hasura](https://hasura.io/) [tutorial](https://hasura.io/docs/latest/graphql/core/deployment/deployment-guides/azure-container-instances-postgres.html) for deploying to Azure.
+
+Hasura is an open source GraphQL engine built on PostgreSQL (although they are starting to support [more than just PostgreSQL](https://hasura.io/graphql/database/sql-server/)). It has super easy to use toolchain in it's web console and CLI. It also has robust but easy to use [authentication](https://hasura.io/docs/latest/graphql/core/auth/authentication/index.html) (including [JWT](https://hasura.io/docs/latest/graphql/core/auth/authentication/jwt.html) support) and [access control](https://hasura.io/docs/latest/graphql/core/auth/authorization/index.html) features.
 
 # Local Development
 
@@ -9,12 +13,6 @@ Prerequisites:
 - [Docker](https://docs.docker.com/install/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
 - [Hasura CLI](https://docs.hasura.io/1.0/graphql/manual/hasura-cli/install-hasura-cli.html#install-hasura-cli)
-
-## Updates
-
-The version of hasura is only updated on deploys.
-
-If you need to update the version deploy a meaningless commit like the one that updated this Readme :)
 
 ## Getting started
 
