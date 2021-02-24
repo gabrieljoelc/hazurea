@@ -1,7 +1,5 @@
 # Hazurea
 
-This project shows how [Hasura](https://hasura.io/) is a 
-
 This follows the [Hasura](https://hasura.io/) [tutorial](https://hasura.io/docs/latest/graphql/core/deployment/deployment-guides/azure-container-instances-postgres.html) for deploying to Azure.
 
 Hasura is an open source GraphQL engine built on PostgreSQL (although they are starting to support [more than just PostgreSQL](https://hasura.io/graphql/database/sql-server/)). It has super easy to use toolchain in it's web console and CLI. It also has robust but easy to use [authentication](https://hasura.io/docs/latest/graphql/core/auth/authentication/index.html) (including [JWT](https://hasura.io/docs/latest/graphql/core/auth/authentication/jwt.html) support) and [access control](https://hasura.io/docs/latest/graphql/core/auth/authorization/index.html) features.
@@ -46,9 +44,7 @@ Note: please do not use `--admin-secret` switch because the secret then could be
 From the `/devops` directory run:
 1. If this is your first time running or a module has been updated run `terraform init`
 
-# Misc
-
-## Remote schema hello world
+# Remote schemas
 
 I followed the steps in the Hasura Remote Schema [docs](https://docs.hasura.io/1.0/graphql/manual/remote-schemas/index.html) and the Node boilerplate [example](https://github.com/hasura/graphql-engine/tree/master/community/boilerplates/remote-schemas/aws-lambda/nodejs). Here are the steps I took:
 
