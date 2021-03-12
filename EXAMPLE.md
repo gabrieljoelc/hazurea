@@ -1,5 +1,10 @@
 # Example Summary
 
+To run these examples, run `docker-compose up -d` and all requests can be posted to `http://localhost:8080/v1/graphql` in Postman
+as a `GraphQL` request.
+
+Unless otherwise specified, set the `x-hasura-admin-secret` header to `testsecret` to make auth simpler.
+
 ## Triggers
 
 This repo is set to up to showcase the features of Hasura that make it easy to integrate with traditional REST APIs
