@@ -1,0 +1,39 @@
+- args:
+    enums: []
+    input_objects:
+    - description: null
+      fields:
+      - description: null
+        name: To
+        type: String!
+      - description: null
+        name: Body
+        type: String!
+      - description: null
+        name: messagingServiceId
+        type: String!
+      name: sendMessageCommand
+    objects:
+    - description: null
+      fields:
+      - description: null
+        name: internalId
+        type: String!
+      name: sendMessageCommandResult
+    scalars: []
+  type: set_custom_types
+- args:
+    comment: null
+    definition:
+      arguments:
+      - description: null
+        name: arg1
+        type: sendMessageCommand!
+      forward_client_headers: false
+      handler: '{{SEND_MESSAGE_URL}}'
+      headers: []
+      kind: synchronous
+      output_type: sendMessageCommandResult
+      type: mutation
+    name: sendSms
+  type: create_action
