@@ -36,3 +36,8 @@ terraform.rc
 # local hasura dev
 config.yaml
 .env
+auth_variables.env
+
+
+# node
+**/node_modules
