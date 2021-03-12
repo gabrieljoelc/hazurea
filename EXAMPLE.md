@@ -93,6 +93,14 @@ This request will return:
 }
 ```
 
-## Auth
+## Auth (Keycloak integration)
 
-TODO
+See [here](https://github.com/httpsOmkar/keycloak-hasura-connector/tree/master/docs) for how to set up keycloak via the admin panel to work with the connector specified in this repo.
+
+Steps:
+1. Get an access token from keycloak - see this [official guide](https://developers.redhat.com/blog/2020/01/29/api-login-and-jwt-token-generation-using-keycloak/)
+2. Once that is done, in your response you will want the JWT in the `access_token` field of the response
+3. In your request to Hasura, use an `Authorization` header with `Bearer <JWT>` as the input
+4. Based on the request you are running, you will either get access approved or access denied.
+
+To test this out the user should get access denied for using the Hasura action.

@@ -1,0 +1,20 @@
+- args:
+    role: user
+    table:
+      name: uploads
+      schema: public
+  type: drop_insert_permission
+- args:
+    permission:
+      backend_only: false
+      check: {}
+      columns:
+      - completed
+      - path
+      - processed_at
+      set: {}
+    role: user
+    table:
+      name: uploads
+      schema: public
+  type: create_insert_permission
